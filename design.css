@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.leva-polovina {
+    background: #0985BF;
+    flex: 1;
+    display: flex;         
+    justify-content: center;
+    align-items: center;
+}
+
+.desna-polovina {
+    background: #E7F9FE;
+    flex: 1;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 90%;
+    max-width: 700px;
+}
+
+.left {
+    width: 50%;
+    aspect-ratio: 1/1;
+    background: white;
+    border-radius: 50px 0 0 50px;
+    margin-right: -1px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+}
+
+.right {
+    width: 50%;
+    aspect-ratio: 1/1;
+    background: white;
+    border-radius: 0 50px 50px 0;
+    overflow: hidden;
+}
+
+.img1 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 50px 50px 0;
+    display: block;
+}
+@media (max-width: 768px){
+    .main{
+        width: 90%;
+        max-width: 700px;
+    }
+    .left , .right{
+        width: 50%;
+        aspect-ratio: 1/1;
+    }
+}
+.head{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial;
+    margin-top: 20px;
+    text-align: center;
+}
+.mini{
+    width: 200px;
+    height: 50px;
+    background-color: #fa6d60;
+    margin-left: 70px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.next{
+    width: 150px;
+    height: 50px;
+    background-color: #0985BF;
+    margin-left: 95px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 1.5;
+    font-size: 40px;
+    color: white;
+}
+.next:hover{
+    opacity: 0.8;
+}
+.next:active{
+    opacity: 0.6;
+}
+.blue{
+    width: 40px;
+    height: 40px;
+    background-color: #0985BF;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+.blue:hover{
+    opacity: 0.8;
+}
+.blue:active{
+    opacity: 0.6;
+}
+.small{
+    color: white;
+    font-size: 30px;
+    margin-right: 20px;
+    font-family: Arial;
+    font-weight: bold;
+}
